@@ -11,8 +11,6 @@ function catchTimeWatch(data) {
 
 player.on('timeupdate', throttle(catchTimeWatch, 1000));
 
-const savedTime = JSON.parse(localStorage.getItem('videoplayer-current-time'));
+const currentTime = JSON.parse(localStorage.getItem('videoplayer-current-time'));
 
-player.setCurrentTime(savedTime.seconds);
-
-// console.log(savedTime);
+player.setCurrentTime(currentTime.seconds);

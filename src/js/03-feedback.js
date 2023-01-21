@@ -44,4 +44,3 @@ function populateForm() {
 };
 
 populateForm();
-// console.log(formRef);
